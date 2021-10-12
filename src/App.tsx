@@ -33,7 +33,7 @@ function App() {
       const proof = tree.getHexProof(leaf);
       const signer = new ethers.providers.Web3Provider(provider).getSigner();
       const contract = ethers.ContractFactory.getContract(
-        "0x99064f2273168eC68B87a5705298AC9181418436",
+        "0x1098269bFc70b26DeA43f18F812D2b9854E874bA",
         abi,
         signer
       );
