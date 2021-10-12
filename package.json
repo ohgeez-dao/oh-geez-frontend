@@ -6,10 +6,6 @@
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@types/jest": "^26.0.20",
-    "@typescript-eslint/eslint-plugin": "^4.15.1",
-    "@typescript-eslint/parser": "^4.15.1",
-    "eslint": "^7.20.0",
-    "eslint-plugin-jest": "^24.1.5",
     "husky": ">=5",
     "jest": "26.6.0",
     "lint-staged": ">=10",
@@ -34,12 +30,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "git push heroku master"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
