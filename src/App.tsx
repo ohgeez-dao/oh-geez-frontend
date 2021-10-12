@@ -24,7 +24,7 @@ function App() {
   }, []);
   const onConnect = () => {
     provider
-      .request({ method: "eth_accounts" })
+      .request({ method: "eth_requestAccounts" })
       .then((accounts) => setAddress(accounts[0]))
       .catch(console.error);
   };
