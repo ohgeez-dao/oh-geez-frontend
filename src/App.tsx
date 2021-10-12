@@ -26,7 +26,10 @@ function App() {
     provider
       .request({ method: "eth_requestAccounts" })
       .then((accounts) => setAddress(accounts[0]))
-      .catch(console.error);
+      .catch((e) => {
+        console.error(e);
+        alert(e.message);
+      });
   };
   const onClick = () => {
     if (address) {
@@ -50,6 +53,7 @@ function App() {
             })
         )
         .catch((e) => {
+          alert(e.message);
           console.error(e);
         });
     }
